@@ -1,0 +1,168 @@
+import java.util.*;
+
+public class task4 {
+    public static void main(String[] args) {
+        int ch = 4;
+        int choice;
+        String name;
+        @SuppressWarnings("unused")
+        int id = 0;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter user name:");
+        name = sc.next();
+        System.out.print("Enter roll no:");
+        id = sc.nextInt();
+        int count = 0;
+        System.out.println("\t\twelcome " + name + " to Online Examination");
+
+        do {
+            System.out.println("1.Take Exam");
+            System.out.println("2.View Marks");
+            System.out.println("3.Exit");
+            System.out.print("Enter your choice:");
+            ch = sc.nextInt();
+            if (ch == 4) {
+                System.out.println("Thank you for giving exam");
+                break;
+            }
+            switch (ch) {
+                case 1: {
+                    System.out.println("Select programing Language:");
+                    System.out.println("1.c \n 2.c++ \n 3. Java");
+                    System.out.println("Enter your choice:");
+                    int sub = sc.nextInt();
+                    System.out.println("There are 5 questions in the examination");
+                    System.out.println("Each question consist of 4 option you have to choose correct answer");
+                    if (sub == 2) {
+                        count = 0;
+                        System.out.println("Q.1 Who invented c++ ? : ");
+                        System.out.println(
+                                "1. Dennis Ritchie \n 2. Jimes Goslingal \n 3. Bjarne Stroustrup\n 4. Ken Thompson");
+                        System.out.print("Enter answer:");
+                        choice = sc.nextInt();
+                        if (choice == 3) {
+                            ++count;
+                        }
+                        System.out.println("Q.2.What is C++ ?");
+                        System.out.println(
+                                "1. C++ is bject oriented programming language  \n 2. C++ is a procedural programming language \n 3. C++ is a assembly language \n 4. None of the above ");
+                        System.out.print("Enter answer:");
+                        choice = sc.nextInt();
+                        if (choice == 3) {
+                            ++count;
+                        }
+                        System.out
+                                .println("Q.3 Identify the correct extension of the user-defined header file in C++.");
+                        System.out.println("1.Cpp \n 2. .h \n 3. .hf \n 4. .hg ");
+                        System.out.print("Enter Answer: ");
+                        choice = sc.nextInt();
+                        if (choice == 2)
+                            ;
+                        {
+                            ++count;
+                        }
+                        System.out.println(" Q4. C++ uses which approach");
+                        System.out.println("1.Top-down \n 2. bottum-up \n 3. left-right \n 4. right-left ");
+                        System.out.print("Enter Answer: ");
+                        choice = sc.nextInt();
+                        if (choice == 2)
+                            ;
+                        {
+                            ++count;
+                        }
+                        System.out.println(" Q5. Which of the following is correct identifier in c++ C++ ?");
+                        System.out.println("1. VAR_1234 \n 2. $var_name \n 3. VARNAME \n 4. var_name ");
+                        System.out.print("Enter Answer: ");
+                        choice = sc.nextInt();
+                        if (choice == 1)
+                            ;
+                        {
+                            ++count;
+                        }
+                    } else if (sub == 1) {
+                        count = 0;
+                        System.out.println("Q..Who is the father of c Language?");
+                        System.out.println("1. Bjame strousrup \n 2.Demis Ritchie \n 3.steve Jobs \n 4.Ken Thompson");
+                        System.out.print("Enter answer");
+                        choice = sc.nextInt();
+                        if (choice == 2) {
+                            ++count;
+                        }
+                        System.out.println("Q.2 Which of the following is not a valid C variable name?");
+                        System.out.println("1. int mumber;\n 2. float rate; \n 3. int variable_count;\n 4. int main;");
+                        System.out.print("Enter answer:");
+                        choice = sc.nextInt();
+                        if (choice == 4) {
+                            ++count;
+                        }
+                        System.out.println("Q.3 All keywords in C are in....");
+                        System.out.println("1. Lowercase\n 2. Uppercase\n 3.Camelcase\n 4.None of the above");
+                        System.out.print("Enter answer:");
+                        choice = sc.nextInt();
+                        if (choice == 1) {
+                            ++count;
+                        }
+                        System.out.println("Q.4  C is... ");
+                        System.out.println(
+                                "1. Procedure oriented\n 2. Object oriented\n 3.Strictly object oriented\n 4.None of the above");
+                        System.out.print("Enter answer:");
+                        choice = sc.nextInt();
+                        if (choice == 1) {
+                            ++count;
+                        }
+                        System.out.println("Q.5 Which is valid  C expression? ");
+                        System.out.println(
+                                "1. int my_num=100,000:\n 2.int my_num = 100000 ;\n 3. int my num = 1000;\n 4.None of the above");
+                        System.out.print("Enter answer:");
+                        choice = sc.nextInt();
+                        if (choice == 2) {
+                            ++count;
+                        }
+                    } else {
+                        System.out.println("Q..Who is the father of Java programming?");
+                        System.out
+                                .println("1. Bjame strousrup \n 2.Demis Ritchie \n 3.James Gosling \n 4.Ken Thompson");
+                        System.out.print("Enter answer");
+                        choice = sc.nextInt();
+                        if (choice == 3) {
+                            ++count;
+                        }
+                        System.out.println("Q.2 No, of primitive data types");
+                        System.out.println("1. 6\n 2. 7 \n 3. 9\n 4. 8");
+                        System.out.print("Enter answer:");
+                        choice = sc.nextInt();
+                        if (choice == 4) {
+                            ++count;
+                        }
+                        System.out
+                                .println("Q.3 Which component used to compile,debug and execute the java programme ?");
+                        System.out.println("1. JDK\n 2. JRE\n 3.JVT\n 4.JVM");
+                        System.out.print("Enter answer:");
+                        choice = sc.nextInt();
+                        if (choice == 1) {
+                            ++count;
+                        }
+                        System.out.println("Q.4 Which of the following is not a feature of Java? ");
+                        System.out.println("1. Use of pointer\n 2. Object oriented\n 3.Portable\n 4.Dynamic");
+                        System.out.print("Enter answer:");
+                        choice = sc.nextInt();
+                        if (choice == 1) {
+                            ++count;
+                        }
+                        System.out.println("Q.5 Dynamic and Extensible ");
+                        System.out.println("1. .js\n 2. .txt\n 3. .class\n 4. .java");
+                        System.out.print("Enter answer:");
+                        choice = sc.nextInt();
+                        if (choice == 4) {
+                            ++count;
+                        }
+                    }
+                    break;
+                }
+                case 2: {
+                    System.out.println("Congratulations  " + name + "You Scored " + count + " marks" + " out of 5");
+                }
+            }
+        } while (true);
+    }
+}
